@@ -1,0 +1,6 @@
+[submodule "eszop-backend"]
+	path = eszop-backend
+	url = https://github.com/Kakaranish/eszop-backend.git
+[submodule "eszop-frontend"]
+	path = eszop-frontend
+	url = https://github.com/Kakaranish/eszop-frontend.git
