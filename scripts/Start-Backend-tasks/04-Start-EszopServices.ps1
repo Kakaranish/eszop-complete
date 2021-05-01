@@ -19,7 +19,7 @@ Invoke-Expression '`$env:ESZOP_DB_SEED=`"false`"'
 dotnet run -p $app --no-build
 "@
 
-  Invoke-Expression "cmd /c start pwsh -noexit -command {$cmds}"
+  Invoke-Expression "cmd /c start pwsh -NoExit -NoProfile -Command {$cmds}"
 }
 
 Pop-Location
