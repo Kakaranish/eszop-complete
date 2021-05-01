@@ -9,9 +9,15 @@ $apps = $(
   "Offers.API",
   "Orders.API"
 )
-  
+
 foreach ($app in $apps) {
-  invoke-expression "cmd /c start pwsh -Command { dotnet run -p $app --no-build }"
+  $cmds = @"
+Invoke-Expression '`$env:ASPNETCORE_ENVIRONMENT=`"DevHostLocal`"'
+Invoke-Expression '`$env:ESZOP_DB_SEED=`"false`"'
+dotnet run -p $app --no-build
+"@
+
+  Invoke-Expression "cmd /c start pwsh -noexit -command {$cmds}"
 }
 
 Pop-Location
