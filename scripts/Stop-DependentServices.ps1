@@ -1,0 +1,1 @@
+& "$PSScriptRoot\..\eszop-backend\scripts\development\local\dependent-services\Stop-DependentServices.ps1"
