@@ -1,4 +1,6 @@
-Push-Location "$PSScriptRoot\..\eszop-backend"
+$repo_root = "$PSScriptRoot\..\.."
+
+Push-Location "${repo_root}\eszop-backend"
 dotnet build
 
 $apps = $(
