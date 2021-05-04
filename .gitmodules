@@ -4,3 +4,9 @@
 [submodule "eszop-frontend"]
 	path = eszop-frontend
 	url = https://github.com/Kakaranish/eszop-frontend.git
+[submodule "eszop-infra"]
+	path = eszop-infra
+	url = https://github.com/Kakaranish/eszop-infra
+[submodule "eszop-image-building"]
+	path = eszop-image-building
+	url = https://github.com/Kakaranish/eszop-image-building.git
