@@ -16,6 +16,7 @@ foreach ($app in $apps) {
   $cmds = @"
 Invoke-Expression '`$env:ASPNETCORE_ENVIRONMENT=`"DevHostLocal`"'
 Invoke-Expression '`$env:ESZOP_DB_SEED=`"false`"'
+Write-Host `"Running $app`"`
 dotnet run -p $app --no-build
 "@
 
