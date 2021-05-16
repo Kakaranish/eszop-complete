@@ -4,7 +4,7 @@ echo "[INFO] Setting up DevHostLocal"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 repoRoot="${SCRIPT_DIR}/../.."
-imgStoragePath=$(readlink -f "${repoRoot}/eszop-backend/Offers.API/Properties/launchSettings.json")
+imgStoragePath=$(readlink -f "${repoRoot}/eszop-frontend/public/wwwroot")
 
 offersLaunchJsonPath="${repoRoot}/eszop-backend/Offers.API/Properties/launchSettings.json"
 cat $offersLaunchJsonPath | \
