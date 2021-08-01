@@ -4,12 +4,12 @@ Push-Location "${repo_root}\eszop-backend"
 dotnet build
 
 $apps = $(
-  "API.Gateway",
-  "Carts.API",
-  "Identity.API",
-  "NotificationService",
-  "Offers.API",
-  "Orders.API"
+  "API.Gateway\API.Gateway",
+  "Carts\Carts.API",
+  "Identity\Identity.API",
+  "NotificationService\NotificationService.API",
+  "Offers\Offers.API",
+  "Orders\Orders.API"
 )
 
 foreach ($app in $apps) {
